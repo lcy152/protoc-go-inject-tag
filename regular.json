@@ -1,0 +1,84 @@
+{
+  "type": [
+    {
+      "target": "*DslBase.TimeStamp",
+      "replace": "primitive.DateTime",
+      "remove_omitempty": true,
+      "import_list": [
+        "go.mongodb.org/mongo-driver/bson/primitive"
+      ]
+    },
+    {
+      "target": "*DslBase.Dvec3",
+      "replace": "[]float64",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Dvec2",
+      "replace": "[]float64",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Ivec2",
+      "replace": "[]int32",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Ivec3",
+      "replace": "[]int32",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Fvec2",
+      "replace": "[]float32",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Dmat3",
+      "replace": "[]float64",
+      "import_list": []
+    },
+    {
+      "target": "*DslBase.Dmat4",
+      "replace": "[]float64",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Fvec3",
+      "replace": "[]float32",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Path2F",
+      "replace": "[][]float32",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Path3F",
+      "replace": "[][]float32",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Path2D",
+      "replace": "[][]float64",
+      "import_list": ["dsl_go/DslBase"]
+    },
+    {
+      "target": "*DslBase.Path3D",
+      "replace": "[][]float64",
+      "import_list": ["dsl_go/DslBase"]
+    }
+  ],
+  "bson_tag": [
+    {
+      "target": "guid",
+      "replace": "_id"
+    }
+  ],
+  "rename": [
+    {
+      "repeat_name": "DslEnum_UserOperation_RegistPatient",
+      "rename": "DslEnum_UserOperation_RegistPatient_2"
+    }
+  ]
+}
